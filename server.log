@@ -1,0 +1,32 @@
+{"timestamp": "2026-07-23T06:18:56.788176+00:00", "level": "INFO", "logger": "uvicorn.error", "message": "Started server process [63117]"}
+{"timestamp": "2026-07-23T06:18:56.788760+00:00", "level": "INFO", "logger": "uvicorn.error", "message": "Waiting for application startup."}
+{"timestamp": "2026-07-23T06:18:56.795862+00:00", "level": "INFO", "logger": "ccuc.bundles", "message": "rendered shared MCP -> /Users/gautamgupta/Desktop/Integrations/claude-code-universal-client/.ccuc/mcp.rendered.json (1 server(s))"}
+{"timestamp": "2026-07-23T06:18:56.795925+00:00", "level": "INFO", "logger": "ccuc.app", "message": "CCUC starting on 0.0.0.0:8080 | seats=1 | model=sonnet | data=/Users/gautamgupta/Desktop/Integrations/claude-code-universal-client/.ccuc"}
+{"timestamp": "2026-07-23T06:18:56.795950+00:00", "level": "INFO", "logger": "ccuc.app", "message": "seat seat-00 | config_dir=(ambient login)"}
+{"timestamp": "2026-07-23T06:18:56.796058+00:00", "level": "INFO", "logger": "ccuc.app", "message": "bundles=/Users/gautamgupta/Desktop/Integrations/claude-code-universal-client/bundles | skill packs=['default', 'pgs-skills'] | shared MCP=/Users/gautamgupta/Desktop/Integrations/claude-code-universal-client/.ccuc/mcp.rendered.json | default packs=['default']"}
+{"timestamp": "2026-07-23T06:18:56.796082+00:00", "level": "WARNING", "logger": "ccuc.app", "message": "DEV AUTH ENABLED \u2014 connect with Bearer 'devkey' (local dev only)"}
+{"timestamp": "2026-07-23T06:18:56.796591+00:00", "level": "INFO", "logger": "uvicorn.error", "message": "Application startup complete."}
+{"timestamp": "2026-07-23T06:18:56.801122+00:00", "level": "INFO", "logger": "uvicorn.error", "message": "Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)"}
+{"timestamp": "2026-07-23T06:18:57.454491+00:00", "level": "INFO", "logger": "uvicorn.access", "message": "127.0.0.1:60211 - \"GET /health HTTP/1.1\" 200"}
+{"timestamp": "2026-07-23T06:18:57.558761+00:00", "level": "INFO", "logger": "uvicorn.error", "message": "127.0.0.1:60212 - \"WebSocket /v1/agent\" [accepted]"}
+{"timestamp": "2026-07-23T06:18:57.558838+00:00", "level": "INFO", "logger": "uvicorn.error", "message": "connection open"}
+{"timestamp": "2026-07-23T06:18:57.560135+00:00", "level": "INFO", "logger": "ccuc.gateway", "message": "authenticated | key=dev"}
+{"timestamp": "2026-07-23T06:18:57.560787+00:00", "level": "INFO", "logger": "ccuc.driver", "message": "spawn claude | session=07b64458-c885-48e2-b02f-37ccfc4172a8 resume=False seat=seat-00 model=sonnet"}
+{"timestamp": "2026-07-23T06:18:58.809747+00:00", "level": "INFO", "logger": "ccuc.driver", "message": "init | session=07b64458-c885-48e2-b02f-37ccfc4172a8 tools=30 mcp=['ccuc-util'] skills=['deep-research', 'design-sync', 'dataviz', 'update-config', 'verify', 'debug', 'code-review', 'simplify', 'batch', 'fewer-permission-prompts', 'doctor', 'loop', 'schedule', 'claude-api', 'run', 'run-skill-generator']"}
+{"timestamp": "2026-07-23T06:19:08.697635+00:00", "level": "INFO", "logger": "uvicorn.access", "message": "127.0.0.1:60231 - \"GET /stats HTTP/1.1\" 200"}
+{"timestamp": "2026-07-23T06:19:08.700879+00:00", "level": "INFO", "logger": "uvicorn.access", "message": "127.0.0.1:60232 - \"GET /audit?session=07b64458-c885-48e2-b02f-37ccfc4172a8 HTTP/1.1\" 200"}
+{"timestamp": "2026-07-23T06:19:08.702911+00:00", "level": "INFO", "logger": "uvicorn.access", "message": "127.0.0.1:60233 - \"GET /metrics HTTP/1.1\" 200"}
+{"timestamp": "2026-07-23T06:19:08.706693+00:00", "level": "INFO", "logger": "uvicorn.error", "message": "127.0.0.1:60234 - \"WebSocket /v1/agent\" [accepted]"}
+{"timestamp": "2026-07-23T06:19:08.706888+00:00", "level": "INFO", "logger": "uvicorn.error", "message": "connection open"}
+{"timestamp": "2026-07-23T06:19:08.707737+00:00", "level": "INFO", "logger": "ccuc.gateway", "message": "authenticated | key=dev"}
+{"timestamp": "2026-07-23T06:19:08.710406+00:00", "level": "INFO", "logger": "ccuc.bundles", "message": "composed 1 skill(s) into /Users/gautamgupta/Desktop/Integrations/claude-code-universal-client/.ccuc/sessions/4d1f2f15-58a5-4df4-8224-04b141c36154/work/.claude/skills: default__intro"}
+{"timestamp": "2026-07-23T06:19:08.710692+00:00", "level": "INFO", "logger": "ccuc.driver", "message": "spawn claude | session=4d1f2f15-58a5-4df4-8224-04b141c36154 resume=False seat=seat-00 model=sonnet"}
+{"timestamp": "2026-07-23T06:19:08.712625+00:00", "level": "INFO", "logger": "ccuc.gateway", "message": "ws disconnect | key=dev sessions=1"}
+{"timestamp": "2026-07-23T06:19:09.332994+00:00", "level": "INFO", "logger": "ccuc.gateway", "message": "ws disconnect | key=dev sessions=0"}
+{"timestamp": "2026-07-23T06:19:09.753704+00:00", "level": "INFO", "logger": "uvicorn.access", "message": "127.0.0.1:60236 - \"GET /sessions HTTP/1.1\" 200"}
+{"timestamp": "2026-07-23T06:19:10.757717+00:00", "level": "INFO", "logger": "uvicorn.access", "message": "127.0.0.1:60237 - \"GET /sessions HTTP/1.1\" 200"}
+{"timestamp": "2026-07-23T06:19:11.763707+00:00", "level": "INFO", "logger": "uvicorn.access", "message": "127.0.0.1:60238 - \"GET /sessions HTTP/1.1\" 200"}
+{"timestamp": "2026-07-23T06:19:12.768814+00:00", "level": "INFO", "logger": "uvicorn.access", "message": "127.0.0.1:60239 - \"GET /sessions HTTP/1.1\" 200"}
+{"timestamp": "2026-07-23T06:19:12.804053+00:00", "level": "INFO", "logger": "ccuc.sessions", "message": "stale-reaped session=4d1f2f15-58a5-4df4-8224-04b141c36154"}
+{"timestamp": "2026-07-23T06:19:12.805722+00:00", "level": "INFO", "logger": "ccuc.app", "message": "stale sweep reaped 1 session(s)"}
+{"timestamp": "2026-07-23T06:19:13.774034+00:00", "level": "INFO", "logger": "uvicorn.access", "message": "127.0.0.1:60240 - \"GET /sessions HTTP/1.1\" 200"}

@@ -1,0 +1,13 @@
+.venv/
+venv/
+.ccuc/
+__pycache__/
+**/__pycache__/
+*.pyc
+.git/
+.gitignore
+server.log
+*.egg-info/
+.pytest_cache/
+seats/
+.env

@@ -1,0 +1,27 @@
+services:
+  ccuc:
+    build: .
+    image: ccuc:latest
+    ports:
+      - "8080:8080"
+    environment:
+      CCUC_DEFAULT_MODEL: ${CCUC_DEFAULT_MODEL:-sonnet}
+      CCUC_DEV_API_KEY: ${CCUC_DEV_API_KEY:-devkey}
+      CCUC_KEY_PEPPER: ${CCUC_KEY_PEPPER:-}
+      # --- Claude auth (a Linux container has no ambient login) ---
+      # Recommended: a long-lived subscription token from `claude setup-token`
+      # on an already-logged-in machine. Passed through to each agent process.
+      CLAUDE_CODE_OAUTH_TOKEN: ${CLAUDE_CODE_OAUTH_TOKEN:-}
+      # Alternative: mount pre-authenticated seat config dirs (see volumes) and set:
+      # CCUC_SEAT_DIRS: '["/seats/seat-00","/seats/seat-01"]'
+    volumes:
+      - ccuc-data:/data
+      # Edit skill packs / MCP servers without rebuilding the image:
+      # - ./bundles:/app/bundles
+      # Mount a folder of pre-authenticated CLAUDE_CONFIG_DIR seats (each contains
+      # a .credentials.json produced by `claude auth login`) to use the seat pool:
+      # - ./seats:/seats:ro
+    restart: unless-stopped
+
+volumes:
+  ccuc-data:

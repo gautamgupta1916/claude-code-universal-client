@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ccuc"
+version = "0.1.0"
+description = "Claude Code Universal Client — a WebSocket gateway that exposes Claude Code as an API-key-gated agent backend over a pool of OAuth subscription seats."
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.29",
+    "pydantic>=2.6",
+    "pydantic-settings>=2.2",
+    "websockets>=12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23"]
+
+[project.scripts]
+ccuc = "ccuc.app:main"
+ccuc-keys = "ccuc.admin:main"
+
+[tool.setuptools]
+packages = ["ccuc"]

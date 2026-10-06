@@ -1,0 +1,3 @@
+# Python deps for bundled MCP servers (installed in the Docker image).
+# The scaffold util_server.py is zero-dependency, so this is empty.
+# Add packages here (e.g. `mcp`, `httpx`) if your servers need them.
